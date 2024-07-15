@@ -113,15 +113,11 @@ export const address = [
   },
   {
     icon: FaPhoneAlt,
-    description: "Hotline: 0931.426.958",
+    description: "Hotline: 0989.976.5292",
   },
   {
     icon: CiMail,
-    description: "Email: onebeland@gmail.com",
-  },
-  {
-    icon: FaBarcode,
-    description: "Mã số thuế: 0314849066",
+    description: "Email: lienhechudautuduan@gmail.com",
   },
 ];
 

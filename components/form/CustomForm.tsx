@@ -168,9 +168,7 @@ Thời gian bán: ${data.time}`;
               Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
             </p>
             <span className="bg-blue-900 text-white rounded-xl px-10 py-1 font-bold mt-3 ">
-              <Link href={""} target="_blank">
-                0931.426.958
-              </Link>
+              <Link href={"tel:09899765292"}>0989.976.5292</Link>
             </span>
           </CardFooter>
         </form>

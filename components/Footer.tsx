@@ -15,7 +15,7 @@ function Footer() {
   const thisYear = new Date().getFullYear();
 
   return (
-    <div className="bg-gray-500 text-white">
+    <div className="bg-white text-amber-700">
       <Container>
         <div className="flex lg:flex-row flex-col">
           <div className="flex flex-1 flex-col  ">
@@ -39,9 +39,9 @@ function Footer() {
             width={300}
           />
         </div>
-        <Separator className="h-[0.2px] lg:-mt-5" />
+        <Separator className="h-[0.2px] lg:mt-5 bg-yellow-300" />
         <p className="font-bold text-sm text-center mt-3">
-          ©{thisYear} Allrights reserved bannhanhbds.com
+          ©{thisYear} Allrights reserved bannhanhnhadatsieutoc.com
         </p>
       </Container>
     </div>
