@@ -71,9 +71,12 @@ function CustomForm() {
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
     setLoading(true);
-    const message = `họ và tên: ${data.username}, số điện thoại: ${data.telephone},tỉnh ${data.province},giá: ${data.price}, thời gian bán: ${data.time}  `;
+    const message = `Họ và Tên: ${data.username}\n
+Số Điện Thoại: ${data.telephone}\n
+Tỉnh: ${data.province}\n
+Giá: ${data.price}\n
+Thời gian bán: ${data.time}`;
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
