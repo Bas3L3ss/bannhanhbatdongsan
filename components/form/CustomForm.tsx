@@ -20,6 +20,10 @@ import { Button } from "../ui/button";
 import { time, places } from "@/utils/data";
 import Link from "next/link";
 
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { toast } from "../ui/use-toast";
+
 const formSchema = z.object({
   username: z.string().min(2, {
     message: "Xin hãy nhập đầy đủ họ và tên.",
@@ -53,6 +57,7 @@ const formSchema = z.object({
 });
 
 function CustomForm() {
+  const [loading, setLoading] = useState<boolean>(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
 
@@ -67,6 +72,35 @@ function CustomForm() {
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
     console.log(data);
+    setLoading(true);
+    const message = `họ và tên: ${data.username}, số điện thoại: ${data.telephone},tỉnh ${data.province},giá: ${data.price}, thời gian bán: ${data.time}  `;
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        {
+          from_name: data.username,
+          to_name: "Võ Huỳnh Giao",
+          to_email: "lienhechudautuduan@gmail.com",
+          message: message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+      )
+      .then(
+        () => {
+          setLoading(false);
+          toast({
+            title: "Đăng ký thành công",
+            description: "Khách hàng vui lòng chờ đợi chúng tôi liên lạc",
+          });
+
+          form.reset();
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+        }
+      );
   };
 
   return (
@@ -120,8 +154,12 @@ function CustomForm() {
             />
           </CardContent>
           <CardFooter className=" flex flex-col">
-            <Button className="w-full font-bold " type="submit">
-              Đăng Ký
+            <Button
+              className="w-full font-bold "
+              disabled={loading}
+              type="submit"
+            >
+              {loading ? "Đang đăng ký " : "Đăng Ký "}
             </Button>
             <p className="mt-2 px-15 text-center lg:px-24 md:px-18">
               Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
