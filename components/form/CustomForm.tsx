@@ -18,6 +18,7 @@ import { Form } from "../ui/form";
 import { Button } from "../ui/button";
 
 import { time, places } from "@/utils/data";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -69,9 +70,9 @@ function CustomForm() {
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <Card>
+    <Card>
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="">
           <CardHeader>
             <CardTitle>LIÊN HỆ NGAY ĐỂ ĐƯỢC TƯ VẤN</CardTitle>
           </CardHeader>
@@ -118,14 +119,22 @@ function CustomForm() {
               name="price"
             />
           </CardContent>
-          <CardFooter>
-            <Button className="w-full" type="submit">
+          <CardFooter className=" flex flex-col">
+            <Button className="w-full font-bold " type="submit">
               Đăng Ký
             </Button>
+            <p className="mt-2 px-15 text-center lg:px-24 md:px-18">
+              Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
+            </p>
+            <span className="bg-blue-900 text-white rounded-xl px-10 py-1 font-bold mt-3 ">
+              <Link href={""} target="_blank">
+                0931.426.958
+              </Link>
+            </span>
           </CardFooter>
-        </Card>
-      </form>
-    </Form>
+        </form>
+      </Form>
+    </Card>
   );
 }
 

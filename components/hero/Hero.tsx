@@ -2,15 +2,18 @@ import React from "react";
 import HeroTitle from "./HeroTitle";
 import HeroDescription from "./HeroDescription";
 import CustomForm from "../form/CustomForm";
+import Container from "../global/Container";
 
 function Hero() {
   return (
-    <div>
-      <HeroTitle />
-      <div className="flex flex-col md:flex-row">
-        <HeroDescription />
-        <CustomForm />
-      </div>
+    <div className=" text-white bg-hero-texture ">
+      <Container className="py-10 flex flex-col gap-10   ">
+        <HeroTitle />
+        <div className="grid  gap-3   grid-cols-1 md:grid-cols-2">
+          <HeroDescription />
+          <CustomForm />
+        </div>
+      </Container>
     </div>
   );
 }
