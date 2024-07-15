@@ -173,7 +173,7 @@ function CustomForm() {
               Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
             </p>
             <Link
-              href={"tel:0865974700"}
+              href={"tel:0899765292"}
               className="bg-blue-900 text-white rounded-xl px-10 py-1 font-bold mt-3 "
             >
               089.976.5292
