@@ -113,7 +113,7 @@ export const address = [
   },
   {
     icon: FaPhoneAlt,
-    description: "Hotline: 0989.976.5292",
+    description: "Hotline: 089.976.5292",
   },
   {
     icon: CiMail,
