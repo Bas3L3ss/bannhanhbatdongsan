@@ -3,7 +3,7 @@ import { Separator } from "../ui/separator";
 
 function TestimonialsTitle() {
   return (
-    <div className="text-white flex flex-col items-center">
+    <div className="text-white text-center flex flex-col items-center mb-3">
       <p className="text-3xl font-semibold">
         HƠN 3.500 KHÁCH HÀNG SỬ DỤNG DỊCH VỤ
       </p>
