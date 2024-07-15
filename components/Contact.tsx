@@ -3,6 +3,7 @@ import Container from "./global/Container";
 import ContactDetails from "./contact/ContactDetails";
 import ContactFormContainer from "./contact/ContactFormContainer";
 import Image from "next/image";
+import { squareSvg } from "@/public/assets/svg/index";
 
 function Contact() {
   return (
@@ -16,7 +17,12 @@ function Contact() {
           <ContactDetails />
         </div>
       </Container>
-      <Image src="" alt="square" />
+      <Image
+        src={squareSvg}
+        width={200}
+        alt="square"
+        className="absolute bottom-10 right-10 pointer-events-none "
+      />
     </div>
   );
 }
