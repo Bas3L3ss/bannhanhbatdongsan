@@ -8,7 +8,7 @@ import { squareSvg } from "@/public/assets/svg/index";
 function Contact() {
   return (
     <div className="relative bg-sky-100">
-      <Container>
+      <Container className="z-1">
         <p className="font-bold text-3xl text-center mb-6">
           Hãy liên hệ với Onebe Land ngay hôm nay !
         </p>
