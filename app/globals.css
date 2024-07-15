@@ -105,3 +105,14 @@
     transform: scale(1) rotate(0);
   }
 }
+
+.dot {
+  border-radius: 100000px;
+  background-image: linear-gradient(rgb(253, 251, 251), rgb(232, 48, 140));
+  background-color: initial;
+  background-size: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+}
