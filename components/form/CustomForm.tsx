@@ -23,6 +23,7 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { toast } from "../ui/use-toast";
 import { revalidatePath } from "next/cache";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(2, {
