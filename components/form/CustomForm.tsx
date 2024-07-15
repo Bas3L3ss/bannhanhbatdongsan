@@ -171,12 +171,12 @@ function CustomForm() {
             <p className="mt-2 px-15 text-center lg:px-24 md:px-18">
               Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
             </p>
-            <a
-              href={"tel:0899765292"}
+            <Link
+              href={"tel:0865974700"}
               className="bg-blue-900 text-white rounded-xl px-10 py-1 font-bold mt-3 "
             >
               089.976.5292
-            </a>
+            </Link>
           </CardFooter>
         </form>
       </Form>
