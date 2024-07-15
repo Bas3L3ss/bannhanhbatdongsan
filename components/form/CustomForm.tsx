@@ -76,10 +76,10 @@ function CustomForm() {
   const onSubmit = (data: z.infer<typeof formSchema>) => {
     setLoading(true);
     const message = `Họ và Tên: ${data.username}\n
-Số Điện Thoại: ${data.telephone}\n
-Tỉnh: ${data.province}\n
-Giá: ${data.price}\n
-Thời gian bán: ${data.time}`;
+    Số Điện Thoại: ${data.telephone}\n
+    Tỉnh: ${data.province}\n
+    Giá: ${data.price}\n
+    Thời gian bán: ${data.time}`;
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
@@ -96,12 +96,12 @@ Thời gian bán: ${data.time}`;
         () => {
           setLoading(false);
           toast({
-            title: "Quy trình đơn giản, nhanh gọn",
+            title: ` Quy trình đơn giản, nhanh gọn`,
             description:
               "Chúng tôi cam kết giữ bí mật tuyệt đối thông tin khách hàng trong suốt quá trình ký gửi, đảm bảo không gây ảnh hưởng đến đời tư và công việc của khách hàng.",
           });
 
-          form.reset();
+          // form.reset();
         },
         (error) => {
           setLoading(false);
