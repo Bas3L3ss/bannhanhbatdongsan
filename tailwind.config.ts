@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        "hero-texture": "url('/img/hero-texture.svg')",
-        "footer-texture": "url('/img/footer-texture.png')",
+        "hero-texture": "url('/assets/hero-texture.jpg')",
+        "service-texture": "url('/assets/service-texture.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",
