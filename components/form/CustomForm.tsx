@@ -18,7 +18,6 @@ import { Form } from "../ui/form";
 import { Button } from "../ui/button";
 
 import { time, places } from "@/utils/data";
-import Link from "next/link";
 
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
@@ -94,8 +93,9 @@ Thời gian bán: ${data.time}`;
         () => {
           setLoading(false);
           toast({
-            title: "Đăng ký thành công",
-            description: "Khách hàng vui lòng chờ đợi chúng tôi liên lạc",
+            title: "Quy trình đơn giản, nhanh gọn",
+            description:
+              "Chúng tôi cam kết giữ bí mật tuyệt đối thông tin khách hàng trong suốt quá trình ký gửi, đảm bảo không gây ảnh hưởng đến đời tư và công việc của khách hàng.",
           });
 
           form.reset();
@@ -168,12 +168,12 @@ Thời gian bán: ${data.time}`;
             <p className="mt-2 px-15 text-center lg:px-24 md:px-18">
               Để được tư vấn sớm và nhanh nhất, hãy gọi HOTLINE bên dưới
             </p>
-            <Link
+            <a
               href={"tel:0899765292"}
               className="bg-blue-900 text-white rounded-xl px-10 py-1 font-bold mt-3 "
             >
               089.976.5292
-            </Link>
+            </a>
           </CardFooter>
         </form>
       </Form>

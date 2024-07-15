@@ -5,6 +5,7 @@ import { address } from "@/utils/data";
 import { footerImg } from "@/public/assets";
 import { IconType } from "react-icons/lib";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 type AddressType = {
   icon: IconType;
