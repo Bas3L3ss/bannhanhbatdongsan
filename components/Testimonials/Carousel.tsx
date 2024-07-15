@@ -22,7 +22,7 @@ const Carousel = () => {
             <CarouselItem key={index}>
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex   text-sm gap-2">
+                  <CardTitle className="flex text-sm gap-2">
                     <div className="grid grid-rows-2">
                       <Image
                         className="row-start-1"
@@ -32,7 +32,7 @@ const Carousel = () => {
                         alt={item.title}
                       />
                     </div>
-                    <p className=" text-xl">{item.title}</p>
+                    <p className=" md:text-xl text-lg ">{item.title}</p>
                   </CardTitle>
                 </CardHeader>
 

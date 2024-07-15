@@ -19,7 +19,7 @@ function Footer() {
       <Container>
         <div className="flex lg:flex-row flex-col">
           <div className="flex flex-1 flex-col  ">
-            <h1 className="font-bold text-5xl mb-3">
+            <h1 className="font-bold lg:text-5xl  sm:text-3xl text-xl mb-3">
               CÔNG TY TNHH ONEBE VIỆT NAM
             </h1>
             {address.map((item: AddressType, index: number) => {
