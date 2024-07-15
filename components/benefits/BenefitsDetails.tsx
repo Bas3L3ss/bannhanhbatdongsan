@@ -15,7 +15,7 @@ function BenefitsDetails() {
               className="mx-auto mb-3"
               src={benefit.icon}
               width={50}
-              alt=""
+              alt={benefit.title}
             />
             <h1 className="font-bold text-xl mb-3">{benefit.title}</h1>
             <p className="text-lg">{benefit.description}</p>

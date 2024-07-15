@@ -2,6 +2,7 @@ import React from "react";
 import TestimonialComments from "./Testimonials/TestimonialComments";
 import TestimonialsTitle from "./Testimonials/TestimonialsTitle";
 import Container from "./global/Container";
+import Carousel from "./Testimonials/Carousel";
 
 function Testimonials() {
   return (
@@ -9,6 +10,7 @@ function Testimonials() {
       <Container>
         <TestimonialsTitle />
         <TestimonialComments />
+        <Carousel />
       </Container>
     </div>
   );
