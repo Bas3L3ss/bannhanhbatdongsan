@@ -28,9 +28,12 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Xin hãy nhập đầy đủ họ và tên.",
   }),
-  telephone: z.string().min(10, {
-    message: "Số điện thoại không hợp lệ (nhập đủ 10 số).",
-  }),
+  telephone: z
+    .string()
+    .max(10, { message: "Số điện thoại không hợp lệ (nhập đủ 10 số)." })
+    .min(10, {
+      message: "Số điện thoại không hợp lệ (nhập đủ 10 số).",
+    }),
   province: z.string({
     required_error: "Vui lòng chọn một tỉnh thành để bán.",
   }),
