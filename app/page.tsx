@@ -1,4 +1,18 @@
-import Image from "next/image";
+import Benefits from "@/components/Benefits";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/hero/Hero";
+import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
 export default function Home() {
-  return <div className="bg-hero-texture h-64 w-full bg-cover bg-center"></div>;
+  return (
+    <>
+      <Hero />
+      <Benefits />
+      <Testimonials />
+      <Team />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
