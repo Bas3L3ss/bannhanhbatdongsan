@@ -21,7 +21,7 @@ function Contact() {
         src={squareSvg}
         width={200}
         alt="square"
-        className="absolute bottom-10 right-10 pointer-events-none "
+        className="absolute bottom-10 right-10 pointer-events-none  z-0 "
       />
     </div>
   );
