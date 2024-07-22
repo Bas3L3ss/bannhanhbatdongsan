@@ -116,3 +116,7 @@
   background-repeat: initial;
   background-attachment: initial;
 }
+
+.shadow-text {
+  text-shadow: 2px 1px black;
+}

@@ -4,7 +4,7 @@ function HeroDescription() {
   return (
     <div className="">
       <div className="sm:gap-0 gap-2 text-nowrap flex flex-col sm:flex-row items-center   ">
-        <p className=" lg:mr-5 mr-3  shake font-bold text-red-600  lg:text-4xl md:text-3xl text-3xl  inline-block">
+        <p className=" lg:mr-5 mr-3  shake font-bold text-red-600  lg:text-4xl md:text-3xl text-3xl  inline-block shadow-text">
           ĐỀN TIỀN
         </p>
         <p className=" sm:flex-col  flex  content-center  font-bold lg:text-3xl md:text-lg text-lg ">
